@@ -1,5 +1,5 @@
 # Apache Airflow — ML Pipeline Orchestration
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python)
 ![Airflow](https://img.shields.io/badge/Apache_Airflow-2.10.5-017CEE?style=for-the-badge&logo=apacheairflow)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker)
 ![AWS](https://img.shields.io/badge/AWS_EC2-t3.medium-FF9900?style=for-the-badge&logo=amazonaws)
@@ -7,9 +7,11 @@
 
 **Production ML pipeline orchestration on AWS EC2 Frankfurt — automated retraining, parallel model training, and scheduled monitoring.**
 
+Built by [Martin James Ng'ang'a](https://github.com/M20Jay) — MLOps Engineer | Nairobi, Kenya 🇰🇪
 
 > ⚡ **Live Airflow UI** → http://52.57.213.229:8080
 >
+> 📁 **GitHub** → https://github.com/M20Jay/airflow-mlops-pipeline
 >
 > 🔗 **Air Quality Pipeline** → https://github.com/M20Jay/air-quality-anomaly-detection
 
