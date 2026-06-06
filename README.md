@@ -7,11 +7,9 @@
 
 **Production ML pipeline orchestration on AWS EC2 Frankfurt — automated retraining, parallel model training, and scheduled monitoring.**
 
-Built by [Martin James Ng'ang'a](https://github.com/M20Jay) — MLOps Engineer | Nairobi, Kenya 🇰🇪
 
 > ⚡ **Live Airflow UI** → http://52.57.213.229:8080
 >
-> 📁 **GitHub** → https://github.com/M20Jay/airflow-mlops-pipeline
 >
 > 🔗 **Air Quality Pipeline** → https://github.com/M20Jay/air-quality-anomaly-detection
 
