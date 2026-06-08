@@ -8,7 +8,7 @@
 **Production ML pipeline orchestration on AWS EC2 Frankfurt — automated retraining, parallel model training, and scheduled monitoring.**
 
 
-> ⚡ **Live Airflow UI** → http://52.57.213.229:8080
+> ⚡ **Live Airflow UI** → http://3.67.15.230:8080
 >
 >
 > 🔗 **Air Quality Pipeline** → https://github.com/M20Jay/air-quality-anomaly-detection
@@ -26,7 +26,7 @@ Without orchestration, ML pipelines must be triggered manually. A model trained 
 ## Architecture
 
 ```
-AWS EC2 t3.medium Frankfurt (52.57.213.229)
+AWS EC2 t3.medium Frankfurt (3.67.15.230)
     ↓
 Docker Compose — 5 Airflow containers
     ├── airflow-webserver  → UI on port 8080
@@ -159,7 +159,7 @@ LocalExecutor runs tasks in the same process as the scheduler — no worker cont
 
 ```bash
 # SSH to server
-ssh -i ~/Documents/GitHub/mlops-key.pem ubuntu@52.57.213.229
+ssh -i ~/Documents/GitHub/mlops-key.pem ubuntu@3.67.15.230
 
 # Start containers (no worker — saves RAM)
 cd ~/airflow-docker
@@ -197,7 +197,7 @@ docker exec airflow-docker-airflow-scheduler-1 airflow dags unpause parallel_mod
 # Upload DAG file
 scp -i ~/Documents/GitHub/mlops-key.pem \
   ~/Documents/GitHub/airflow-mlops-pipeline/dags/new_dag.py \
-  ubuntu@52.57.213.229:~/airflow-docker/dags/
+  ubuntu@3.67.15.230:~/airflow-docker/dags/
 
 # Airflow detects new DAGs automatically within 30 seconds
 ```
@@ -225,7 +225,7 @@ sudo systemctl restart airflow.service
 | air_quality_retrain DAG | ✅ Live — runs every Monday 5am |
 | parallel_model_training DAG | ✅ Live — parallel execution confirmed |
 | Systemd auto-start on reboot | ✅ Enabled |
-| Airflow UI accessible | ✅ http://52.57.213.229:8080 |
+| Airflow UI accessible | ✅ http://3.67.15.230:8080 |
 | Both DAGs pushed to GitHub | ✅ This repository |
 
 ---
