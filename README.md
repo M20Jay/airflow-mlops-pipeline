@@ -252,8 +252,8 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 | Day 3 | First DAG — air_quality_retrain — ran successfully | ✅ |
 | Day 4 | Parallel DAG — LSTM + ARIMA simultaneously | ✅ |
 | Day 5 | GitHub repo, README, assets | ✅ |
-| Day 6 | Week 9 notes | ⏳ |
-| Day 7 | LinkedIn post + GitHub profile update | ⏳ |
+| Day 6 | Week 9 notes — pushed to GitHub | ✅ |
+| Day 7 | LinkedIn post + GitHub profile update | ✅ |
 
 ---
 
