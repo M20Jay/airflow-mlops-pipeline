@@ -63,6 +63,8 @@ pull_data → retrain_model → evaluate_model → save_model_to_s3 → save_met
 | `pull_data` | Fetches fresh PM2.5 readings from OpenAQ API |
 | `retrain_model` | Retrains ARIMA model on new data |
 | `evaluate_model` | Compares new RMSE against baseline 9.93 µg/m³ |
+| `save_model_to_s3` | Saves retrained model to S3 with timestamp |
+| `save_metrics_to_rds` | Logs RMSE and run date to RDS PostgreSQL |
 
 **Why weekly retraining matters:** Evidently AI detected PM2.5 mean shift from **19.02 → 12.50 µg/m³** in Week 8 — seasonal data drift from dry season to wet season. Without automated retraining, this drift compounds silently and degrades forecast accuracy over time.
 
@@ -227,6 +229,9 @@ sudo systemctl restart airflow.service
 | Systemd auto-start on reboot | ✅ Enabled |
 | Airflow UI accessible | ✅ https://airflow.martin-mlops.com |
 | Both DAGs pushed to GitHub | ✅ This repository |
+| S3 model storage | ✅ martin-mlops-models (eu-central-1) |
+| RDS metrics logging | ✅ martin-mlops-db · model_runs table |
+| Permanent HTTPS domain | ✅ https://airflow.martin-mlops.com |
 
 ---
 
@@ -254,6 +259,18 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 | Day 5 | GitHub repo, README, assets | ✅ |
 | Day 6 | Week 9 notes — pushed to GitHub | ✅ |
 | Day 7 | LinkedIn post + GitHub profile update | ✅ |
+
+**Week 10 — AWS Deep Dive**
+
+| Day | Task | Status |
+|-----|------|--------|
+| Day 1 | Elastic IP — 3.67.15.230 permanent | ✅ |
+| Day 2 | Domain + Route 53 — martin-mlops.com | ✅ |
+| Day 3 | Nginx + Certbot + HTTPS — green padlock | ✅ |
+| Day 4 | S3 model storage + IAM user mlops-server | ✅ |
+| Day 5 | RDS PostgreSQL + model_runs table | ✅ |
+| Day 6 | End to end test — all 5 tasks green | ✅ |
+| Day 7 | README + Notes + GitHub + LinkedIn | ✅ |
 
 
 ---
