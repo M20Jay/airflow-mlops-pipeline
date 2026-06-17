@@ -271,11 +271,6 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 | Day 5 | RDS PostgreSQL + model_runs table | ✅ |
 | Day 6 | End to end test — all 5 tasks green | ✅ |
 | Day 7 | README + Notes + GitHub + LinkedIn | ✅ |
-
-
----
-
-
 ## Week 10 — 5-Task Pipeline (S3 + RDS Added)
 
 ### S3 DAG Dashboard
@@ -289,6 +284,11 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 
 ### Pipeline Flow Complete
 ![Week 10 Graph](assets/airflow_week10_graph.png)
+
+
+
+---
+
 
 ---
 *Week 10 of 15 · Apache Airflow ML Orchestration · Built in Nairobi, Kenya 🇰🇪*
