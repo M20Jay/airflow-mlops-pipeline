@@ -258,6 +258,22 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 
 ---
 
+
+## Week 10 — 5-Task Pipeline (S3 + RDS Added)
+
+### S3 DAG Dashboard
+![S3 DAG Dashboard](assets/air_quality_retrain_s3_dashboard.png)
+
+### S3 DAG Graph
+![S3 DAG Graph](assets/air_quality_retrain_s3_graph.png)
+
+### End to End Test — All 5 Tasks Green
+![Week 10 Dashboard](assets/airflow_week10_dashboard.png)
+
+### Pipeline Flow Complete
+![Week 10 Graph](assets/airflow_week10_graph.png)
+
+---
 *Week 10 of 15 · Apache Airflow ML Orchestration · Built in Nairobi, Kenya 🇰🇪*
 *Part of a 15-week MLOps programme building production ML systems from scratch.*
 *github.com/M20Jay*
