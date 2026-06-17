@@ -46,7 +46,7 @@ Systemd service → auto-starts on server reboot
 
 ## DAG 1 — Air Quality Weekly Retraining
 
-**Schedule:** Every Monday at 5am | **Tasks:** 3 | **Executor:** LocalExecutor
+**Schedule:** Every Monday at 5am | **Tasks:** 5 | **Executor:** LocalExecutor
 
 ### Dashboard
 ![Air Quality DAG Dashboard](assets/air_quality_retrain_dashboard.png)
