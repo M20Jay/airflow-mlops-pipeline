@@ -3,7 +3,7 @@
 ![Airflow](https://img.shields.io/badge/Apache_Airflow-2.10.5-017CEE?style=for-the-badge&logo=apacheairflow)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker)
 ![AWS](https://img.shields.io/badge/AWS_EC2-t3.medium-FF9900?style=for-the-badge&logo=amazonaws)
-![Week](https://img.shields.io/badge/Week_9_of_15-MLOps_Programme-brightgreen?style=for-the-badge)
+![Week](https://img.shields.io/badge/Week_10_of_15-MLOps_Programme-brightgreen?style=for-the-badge)
 
 **Production ML pipeline orchestration on AWS EC2 Frankfurt — automated retraining, parallel model training, and scheduled monitoring.**
 
