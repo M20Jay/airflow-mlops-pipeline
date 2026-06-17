@@ -8,7 +8,7 @@
 **Production ML pipeline orchestration on AWS EC2 Frankfurt — automated retraining, parallel model training, and scheduled monitoring.**
 
 
-> ⚡ **Live Airflow UI** → http://3.67.15.230:8080
+> ⚡ **Live Airflow UI** → https://airflow.martin-mlops.com
 >
 >
 > 🔗 **Air Quality Pipeline** → https://github.com/M20Jay/air-quality-anomaly-detection
@@ -55,7 +55,7 @@ Systemd service → auto-starts on server reboot
 ![Air Quality DAG Graph](assets/air_quality_retrain_graph.png)
 
 ```
-pull_data → retrain_model → evaluate_model
+pull_data → retrain_model → evaluate_model → save_model_to_s3 → save_metrics_to_rds
 ```
 
 | Task | Purpose |
@@ -225,7 +225,7 @@ sudo systemctl restart airflow.service
 | air_quality_retrain DAG | ✅ Live — runs every Monday 5am |
 | parallel_model_training DAG | ✅ Live — parallel execution confirmed |
 | Systemd auto-start on reboot | ✅ Enabled |
-| Airflow UI accessible | ✅ http://3.67.15.230:8080 |
+| Airflow UI accessible | ✅ https://airflow.martin-mlops.com |
 | Both DAGs pushed to GitHub | ✅ This repository |
 
 ---
@@ -257,6 +257,6 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 
 ---
 
-*Week 9 of 15 · Apache Airflow ML Orchestration · Built in Nairobi, Kenya 🇰🇪*
+*Week 10 of 15 · Apache Airflow ML Orchestration · Built in Nairobi, Kenya 🇰🇪*
 *Part of a 15-week MLOps programme building production ML systems from scratch.*
 *github.com/M20Jay*
