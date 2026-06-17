@@ -255,16 +255,10 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 | Day 6 | Week 9 notes — pushed to GitHub | ✅ |
 | Day 7 | LinkedIn post + GitHub profile update | ✅ |
 
+
 ---
 
 *Week 10 of 15 · Apache Airflow ML Orchestration · Built in Nairobi, Kenya 🇰🇪*
 *Part of a 15-week MLOps programme building production ML systems from scratch.*
 *github.com/M20Jay*
 
-## Week 10 — End to End Test Results
-
-### DAG Run — All 5 Tasks Green
-![Week 10 Dashboard](assets/airflow_week10_dashboard.png)
-
-### Pipeline Flow — Complete
-![Week 10 Graph](assets/airflow_week10_graph.png)
