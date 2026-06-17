@@ -295,3 +295,6 @@ This repo orchestrates the system built in [Week 6 — Air Quality Anomaly Detec
 *Part of a 15-week MLOps programme building production ML systems from scratch.*
 *github.com/M20Jay*
 
+---
+📝 **LinkedIn Post:** [Week 10 — AWS Deep Dive](https://www.linkedin.com/feed/update/urn:li:share:7472968046752571392/)
+
